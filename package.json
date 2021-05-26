@@ -29,6 +29,8 @@
   },
   "private": true,
   "dependencies": {
+    "@nrwl/angular": "^12.3.4",
+    "@nrwl/nest": "^12.3.4",
     "tslib": "^2.0.0"
   },
   "devDependencies": {
