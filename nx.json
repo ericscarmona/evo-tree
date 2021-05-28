@@ -1,8 +1,4 @@
 {
-  "npmScope": "evo-tree",
-  "affected": {
-    "defaultBase": "master"
-  },
   "implicitDependencies": {
     "package.json": {
       "dependencies": "*",
@@ -10,6 +6,10 @@
     },
     ".eslintrc.json": "*"
   },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "npmScope": "evo-tree",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/nx-cloud",
@@ -21,5 +21,16 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "evo-tree-api": {
+      "tags": []
+    },
+    "evo-tree": {
+      "tags": []
+    },
+    "evo-tree-e2e": {
+      "tags": [],
+      "implicitDependencies": ["evo-tree"]
+    }
+  }
 }
