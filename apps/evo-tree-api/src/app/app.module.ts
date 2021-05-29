@@ -6,13 +6,13 @@ import { Species } from './species/species.entity';
 
 @Module({
   imports: [
-    SpeciesModule,
     TypeOrmModule.forRoot({
       type: 'sqlite',
       database: 'evo-tree',
       synchronize: true,
       entities: [Species],
     }),
+    SpeciesModule,
   ],
   controllers: [AppController],
   providers: [],

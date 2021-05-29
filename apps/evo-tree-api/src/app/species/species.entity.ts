@@ -1,8 +1,8 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, PrimaryColumn } from 'typeorm';
 
 @Entity()
 export class Species {
-  @PrimaryGeneratedColumn()
+  @PrimaryColumn({ unique: true })
   id: number;
 
   @Column()
@@ -11,6 +11,6 @@ export class Species {
   @Column({ nullable: true })
   parentId: string;
 
-  @Column({ nullable: true })
+  @Column({ nullable: true, type: 'simple-json' })
   children: Species[];
 }
