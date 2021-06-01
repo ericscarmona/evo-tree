@@ -175,6 +175,27 @@
           }
         }
       }
+    },
+    "home-page-feature": {
+      "root": "libs/home-page-feature",
+      "sourceRoot": "libs/home-page-feature/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/home-page-feature/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/home-page-feature"],
+          "options": {
+            "jestConfig": "libs/home-page-feature/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "schematics": {

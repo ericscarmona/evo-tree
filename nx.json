@@ -31,6 +31,9 @@
     "evo-tree-e2e": {
       "tags": [],
       "implicitDependencies": ["evo-tree"]
+    },
+    "home-page-feature": {
+      "tags": []
     }
   }
 }
