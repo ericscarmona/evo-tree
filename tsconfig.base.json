@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@evo-tree/home-page-feature": ["libs/home-page-feature/src/index.ts"]
+      "@evo-tree/home-page-feature": ["libs/home-page-feature/src/index.ts"],
+      "@evo-tree/species-data-access": ["libs/species-data-access/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

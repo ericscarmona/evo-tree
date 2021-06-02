@@ -196,6 +196,27 @@
           }
         }
       }
+    },
+    "species-data-access": {
+      "root": "libs/species-data-access",
+      "sourceRoot": "libs/species-data-access/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/species-data-access/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/species-data-access"],
+          "options": {
+            "jestConfig": "libs/species-data-access/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "schematics": {

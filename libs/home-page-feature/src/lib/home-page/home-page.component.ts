@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SpeciesFacade } from '@evo-tree/species-data-access';
 
 @Component({
   selector: 'app-home-page',
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent implements OnInit {
-  constructor() {}
+  constructor(private _speciesFacade: SpeciesFacade) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this._speciesFacade.getAllSpecies();
+  }
 }
